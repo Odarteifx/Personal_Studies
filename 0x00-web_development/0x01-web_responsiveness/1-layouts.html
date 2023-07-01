@@ -4,23 +4,80 @@
   <title>Web Layouts</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style> </style>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <style>
+   *{
+    box-sizing: border-box;
+   }
+   body{
+    font-family:'poppins'; font-size: 22px:
+   }
+   header{
+     padding: 30px;
+	 background-color: #404040;
+	 text-align: center;
+	 color: white;
+	 font-size: 35px;
+   }
+   nav{
+    float: left;
+	width: 30%;
+	height: 400px;
+	padding: 20px;
+	background-color: #686868;
+   }
+   nav ul{
+    list-style-type: none;
+	padding: 0px;
+   }
+   article{
+    width: 70%;
+	height: 400px;
+	float: left;
+	background-color: #dcdcdc;
+	padding: 20px;
+   }
+   section::after{
+     display: table;
+	 content: "";
+	 clear: both;
+   }
+   footer{
+     padding: 10px;
+	 text-align: center;
+	 color:white;
+	 background-color: #404040;
+   }
+   @media (max-width:600px){
+     nav{
+	  width: 100%;
+	 }
+	 article{
+	  width: 100%;
+	 }
+   }
+  </style>
  </head>
  <body>
-  <header>Sport Cars</header>
+  <header>
+   <h2>Sport Cars</h2>
+  </header>
   <section>
    <nav>
     <ul>
-	 <li>Porshce</li>
-	 <li>BMW</li>
-	 <li>AUDI</li>
+	 <li> <a href="#">Porshce</a></li>
+	 <li><a href="#">BMW</a></li>
+	 <li><a href="#">AUDI</a></li>
 	</ul>
    </nav>
 
-   <aside>
-    <h2>PORSCHE</H2>
+   <article>
+    <h1>PORSCHE</h1>
 	<p>Dr. Ing. h.c. F. Porsche AG, usually shortened to Porsche (German pronunciation: [ˈpɔʁʃə] (listen); see below), is a German automobile manufacturer specializing in high-performance sports cars, SUVs and sedans, headquartered in Stuttgart, Baden-Württemberg, Germany. The company is owned by Volkswagen AG, a controlling stake of which is owned by Porsche Automobil Holding SE. Porsche's current lineup includes the 718 Boxster/Cayman, 911 (992), Panamera, Macan, Cayenne and Taycan.</p>
-   </aside>
-  </section> 
+   </article>
+  </section>
+  <footer>
+   <p>Footer</p>
+  </footer>
  </body>
 </html>
